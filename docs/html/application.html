@@ -1,0 +1,338 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Application &mdash; Hotel bookings reporting  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Introduction" href="introduction.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="home.html" class="icon icon-home" alt="Documentation Home"> Hotel bookings reporting
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Documentation:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Application</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#technologies">Technologies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#project-structure">Project structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#functionality">Functionality</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#clean-data">Clean data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#analyse-active-bookings">Analyse active bookings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#total-guest-per-day">Total guest per day</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-information">Module information</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="home.html">Hotel bookings reporting</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="home.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Application</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+     
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="application">
+<span id="id1"></span><h1>Application<a class="headerlink" href="#application" title="Permalink to this headline">¶</a></h1>
+<p>Here, more in-depth information about the application is provided.</p>
+<div class="section" id="technologies">
+<h2>Technologies<a class="headerlink" href="#technologies" title="Permalink to this headline">¶</a></h2>
+<p>These are the main technologies used to create this application.</p>
+<p><strong>Language</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.python.org/">Python3</a></p></li>
+</ul>
+<p><strong>Data analysis</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://pandas.pydata.org/">pandas</a></p></li>
+</ul>
+<p><strong>User Interface</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://wiki.python.org/moin/TkInter">Tkinter</a></p></li>
+</ul>
+<p><strong>Documentation</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.sphinx-doc.org/en/master/">Sphinx</a></p></li>
+</ul>
+</div>
+<div class="section" id="project-structure">
+<h2>Project structure<a class="headerlink" href="#project-structure" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">|</span><span class="n">__data</span>
+<span class="o">|</span>   <span class="o">|</span><span class="n">__</span> <span class="n">raw</span>
+<span class="o">|</span>   <span class="o">|</span><span class="n">__</span> <span class="n">results</span>
+<span class="o">|</span>
+<span class="o">|</span><span class="n">__</span> <span class="n">docs</span>
+<span class="o">|</span>
+<span class="o">|</span><span class="n">__</span> <span class="n">hotel_booking_app</span>
+<span class="o">|</span>   <span class="o">|</span><span class="n">__</span> <span class="n">src</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="o">|</span><span class="n">__</span> <span class="n">preparation</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="o">|</span>   <span class="o">|</span><span class="n">__</span> <span class="n">prepare_date</span><span class="o">.</span><span class="n">py</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="o">|</span><span class="n">__</span> <span class="n">processing</span>
+<span class="o">|</span>   <span class="o">|</span>       <span class="o">|</span><span class="n">__analyse_data</span><span class="o">.</span><span class="n">py</span>
+<span class="o">|</span>   <span class="o">|</span><span class="n">__view</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="o">|</span><span class="n">__gui</span><span class="o">.</span><span class="n">py</span>
+<span class="o">|</span>   <span class="o">|</span>
+<span class="o">|</span>   <span class="o">|</span><span class="n">__</span> <span class="n">settings</span><span class="o">.</span><span class="n">py</span>
+<span class="o">|</span>
+<span class="o">|</span><span class="n">__</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+<span class="o">|</span><span class="n">__</span> <span class="n">README</span>
+</pre></div>
+</div>
+<p>In the folder <code class="code docutils literal notranslate"><span class="pre">data</span></code> the raw and resulting CSV files
+are located.</p>
+<ul class="simple">
+<li><p><code class="code docutils literal notranslate"><span class="pre">data\raw</span></code> : Contains uploaded CSV files.</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">data\results</span></code> : Contains resulting CSV files.</p></li>
+</ul>
+<p></p>
+<p>The folder <code class="code docutils literal notranslate"><span class="pre">docs</span></code> contains the documentation of the application.</p>
+<p></p>
+<p>In the package <code class="code docutils literal notranslate"><span class="pre">hotel_booking_app</span></code> all the source code is located.</p>
+<ul class="simple">
+<li><p><code class="code docutils literal notranslate"><span class="pre">hotel_booking_app\settings.py</span></code> : Here, the paths of the folders are defined to which the CSV files are saved to.</p></li>
+</ul>
+<p>All the logic of the application is located in the package
+<code class="code docutils literal notranslate"><span class="pre">hotel_booking_app\src</span></code>. It contains two packages;</p>
+<ul class="simple">
+<li><p><code class="code docutils literal notranslate"><span class="pre">hotel_booking_app\preparation</span></code>, containing logic to prepare data for further use, and</p></li>
+<li><dl class="simple">
+<code class="code docutils literal notranslate"><span class="pre">hotel_booking_app\processing</span></code>, where all files are located in which data is processed.<dd><ul>
+<li><p>The file <code class="code docutils literal notranslate"><span class="pre">analyse_data.py</span></code> contains methods for analysing hotel bookings.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>The <code class="code docutils literal notranslate"><span class="pre">hotel_booking_app\view</span></code> package contains the GUI of the application.</p>
+<p>The entry point of the application is the file <code class="code docutils literal notranslate"><span class="pre">hotel_booking_app\view\gui.py</span></code></p>
+</div>
+<div class="section" id="functionality">
+<h2>Functionality<a class="headerlink" href="#functionality" title="Permalink to this headline">¶</a></h2>
+<p>In the following the base functionalities are explained.</p>
+<div class="section" id="clean-data">
+<h3>Clean data<a class="headerlink" href="#clean-data" title="Permalink to this headline">¶</a></h3>
+<p>The function <code class="code docutils literal notranslate"><span class="pre">import_clean_data(csv_file_path,</span> <span class="pre">csv_file_save_to_path,threshold)</span></code>
+reads a CSV file, cleans it and saves the result to <code class="code docutils literal notranslate"><span class="pre">data\raw</span></code>. It drops
+all rows that have more than a certain percentage of NaN entries. This can be
+controlled by the threshold input.</p>
+</div>
+<div class="section" id="analyse-active-bookings">
+<h3>Analyse active bookings<a class="headerlink" href="#analyse-active-bookings" title="Permalink to this headline">¶</a></h3>
+<p>With the help of the function
+<code class="code docutils literal notranslate"><span class="pre">get_active_bookings(csv_file_path,</span> <span class="pre">selected_date,</span> <span class="pre">time_span)</span></code>
+it is possible to get all bookings, that are currently active
+or will begin in the next <code class="code docutils literal notranslate"><span class="pre">x</span></code> days. The result is saved as a pandas
+data frame, which is then cleaned and saved as CSV file by the function
+<code class="code docutils literal notranslate"><span class="pre">analyse_active_bookings(csv_file_path,</span> <span class="pre">csv_file_save_to_path,</span> <span class="pre">selected_date,</span> <span class="pre">time_span)</span></code>
+. The following UML diagram gives an overview of the procedure.</p>
+<img alt="_images/uml_active_bookings.png" src="_images/uml_active_bookings.png" />
+<p></p>
+<p>In order to receive those bookings, the arrival and leaving dates are identified.
+In a next step, all bookings where the arrival date is within the next <code class="code docutils literal notranslate"><span class="pre">x</span></code>
+days, and the leaving date is after the current date are selected.
+Next, the analysis columns are dropped and the result data frame is saved to a
+CSV file.</p>
+</div>
+<div class="section" id="total-guest-per-day">
+<h3>Total guest per day<a class="headerlink" href="#total-guest-per-day" title="Permalink to this headline">¶</a></h3>
+<p>The function
+<code class="code docutils literal notranslate"><span class="pre">analyse_total_guests(csv_file_path,</span> <span class="pre">csv_file_save_to_path,</span> <span class="pre">selected_date,time_span)</span></code>
+determines the total number of adults, children, and babies over the next
+<code class="code docutils literal notranslate"><span class="pre">x</span></code> days. The following UML diagram gives an overview of the function.</p>
+<img alt="_images/uml_total_guests.png" src="_images/uml_total_guests.png" />
+<p></p>
+<p>The analysis is based on the resulting pandas data frame of the function
+<code class="code docutils literal notranslate"><span class="pre">get_active_bookings(csv_file_path,</span> <span class="pre">selected_date,time_span)</span></code>.</p>
+<p></p>
+<p>In a first step a new pandas data frame is created which contains the range
+between the arrival date and the leaving date. Next, this data frame is merged
+with the columns for adults, children, and babies. The result is
+a data frame in which every booking is assigned to the corresponding
+date of stay.</p>
+<p></p>
+<p>Lastly, by grouping by the stayed dates and sum up the number of
+adults, children, and babies, the total number of guest in the next
+<code class="code docutils literal notranslate"><span class="pre">x</span></code> days is calculated.
+The resulting data frame is saved to a CSV file.</p>
+</div>
+<div class="section" id="module-information">
+<h3>Module information<a class="headerlink" href="#module-information" title="Permalink to this headline">¶</a></h3>
+<p>Information about individual modules can be found under <strong>Application Modules</strong>.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="introduction.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Miriam Aydt
+
+    </p>
+  </div>
+    
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
